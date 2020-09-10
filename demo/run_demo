@@ -26,7 +26,7 @@ elif [ "$AGENT" = "hospital2" ]; then
 	AGENT_PORT=8090
 	AGENT_PORT_RANGE=8090-8098
 	echo "Preparing agent image..."
-	docker build -q -t "$AGENT" -f ../docker/Dockerfile_hospital.demo --build-arg data_file="$AGENT" --build-arg hospital_name="Bob" .. || exit 1
+	docker build -q -t "$AGENT" -f ../docker/Dockerfile_hospital.demo --build-arg data_file="$AGENT" --build-arg hospital_name="Bob (e1)" .. || exit 1
 elif [ "$AGENT" = "hospital3" ]; then
 	AGENT_MODULE="hospital"
 	AGENT_PORT=8110
